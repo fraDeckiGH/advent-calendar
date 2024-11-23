@@ -11,6 +11,8 @@
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    
+    --border-radius: 8px;
 }
 
 a {
@@ -35,19 +37,24 @@ h1 {
     line-height: 1.1;
 }
 
+img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
 .card {
-    padding: 2em;
+    padding: 1.5em;
 }
 
 #app {
-    max-width: 1280px;
+    /* max- */width: 1280px;
     margin: 0 auto;
     padding: 2rem;
     text-align: center;
 }
 
 button {
-    border-radius: 8px;
+    border-radius: var(--border-radius);
     border: 1px solid transparent;
     padding: 0.6em 1.2em;
     font-size: 1em;

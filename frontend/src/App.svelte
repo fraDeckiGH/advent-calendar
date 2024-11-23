@@ -1,42 +1,28 @@
 <script>
-    import svelte_logo from "./assets/svelte.svg"
-    import Counter from "./lib/Counter.svelte"
-
+    import Calendar from "./lib/Calendar.svelte"
     import dayjs from "dayjs"
 
     console.log(dayjs())
 </script>
 
 <main>
-    <a
-        href="https://svelte.dev/docs/svelte/overview"
-        target="_blank"
-        rel="noreferrer"
-    >
-        <img src={svelte_logo} class="logo svelte" alt="Svelte Logo" />
-    </a>
-    <h1>Template frontend with Svelte</h1>
-
-    <div class="card">
-        <Counter />
-    </div>
-
-    <p class="read-the-docs">Click on the Svelte logo to learn more</p>
+    <h1>Advent Calendar</h1>
+    <hr>
+    <Calendar />
 </main>
 
 <style>
-    .logo {
-        margin: 0 auto;
-        height: 6em;
-        padding: 1.5em;
-        will-change: filter;
-        transition: filter 300ms;
-
-        &:hover {
-            filter: drop-shadow(0 0 2em #ff3e00aa);
-        }
+    h1 {
+        font-size: 2.5em;
+        
+        background: linear-gradient(75deg,
+            hsl(209.62deg 100% 75% / 87%), 
+            rgba(255, 255, 255, 0.87)
+        );
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
-    .read-the-docs {
-        color: #afafaf;
+    hr {
+        margin: 2em 0 2.5em;
     }
 </style>
