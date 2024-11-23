@@ -4,13 +4,13 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host 0.0.0.0",
     "build": "vite build",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json && tsc -p tsconfig.node.json",
     "test": "vitest",
     "lint": "eslint --fix 'src/**/*.{js,ts,svelte,svelte.js,svelte.ts}'",
-    "format": "prettier {src,tests} --write"
+    "format": "prettier src tests --write"
   },
   "devDependencies": {
     "@eslint/js": "^9.14.0",
