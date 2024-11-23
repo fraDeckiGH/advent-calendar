@@ -54,7 +54,7 @@ Most important files
   - for development: [http://0.0.0.0:10001](http://0.0.0.0:10001)
     - this server uses hot reloading, when a file is changed, the webpage gets the change automatically
   - for production: [http://0.0.0.0:10000](http://0.0.0.0:10000)
-    - Rebuild the container for changes: `docker compose up -d --build frontend_dev`
+    - Rebuild the container for changes: `docker compose up -d --build frontend`
 
 
 ## Included Packages
