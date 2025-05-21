@@ -82,6 +82,3 @@ Helpful commands for the frontend-code:
   docker compose run frontend_dev npm run test
 ```
 
-
-
-
